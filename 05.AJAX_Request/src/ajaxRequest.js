@@ -35,7 +35,7 @@ function ajaxReq() {
         options.failure.call(options.context, xhr, xhr.status, xhr.responseText);
       }
 
-      options.complete.call(options.context, xhr.status, xhr);
+      options.complete.call(options.context, xhr, xhr.status);
     }
   };
 
